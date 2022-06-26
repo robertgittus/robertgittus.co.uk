@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Robert Gittus - Poly-Coasters</title>
+		<link rel="stylesheet" type="text/css" href="css/style-minified.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link rel="shortcut icon" href="resources/images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="resources/images/icon.png" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+    </head>
+	<body>
+        <header>
+            <div class="nav-container" onclick="openNav()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div id="myNav" class="overlay">
+                    <div class="nav-container" onclick="closeNav()">
+                        <div class="bar1 bar1-white"></div>
+                        <div class="bar2 bar1-white"></div>
+                        <div class="bar3 bar1-white"></div>
+                    </div>
+                    <div class="overlay-content">
+                        <div class="box">
+                            <a href="/#portfolio" onclick="closeNav()">Overview,</a> 
+                            <a href="https://medium.com/@robertgittus">Blog,</a>
+                        </div>
+                        <div class="box">
+                            <a href="/#about-contact" onclick="closeNav()">About,</a> 
+                            <a href="/#about-contact" onclick="closeNav()">Contact.</a>
+                        </div>
+                    </div>
+                </div>
+			<a href="#"><img id="Name" src="resources/images/Header.jpg"></img></a>
+        </header>
+        <div class="container">
+            <div class="text-container">
+                <div class="box">
+                    <h1>Poly-Coaster</h1>
+                </div>
+                <div class="box">
+                    <h1>Produce, Manufacturing,</h1><h1>User Experience.</h1>
+                </div>
+            </div>
+            <article>
+                <p>
+                    A small design team developed the poly-coaster design creating a multipurpose coaster concept and various working prototypes. The product allowed individual drinks coasters to be combined to create a larger protective surface for pots and pans. The design’s primary objective was to provide the consumer with a simple and modular system which could be commercialised easily.
+                </p>
+            </article>
+            <div id="project">                    
+                <div class="cell-full noanimation">
+                    <img src="resources/images/Poly-Coaster/1.jpg">					
+                </div>
+                <div class="cell-full noanimation">
+                    <img src="resources/images/Poly-Coaster/4.jpg"> 
+                <div class="cell-full noanimation">
+                    <img src="resources/images/Poly-Coaster/3.jpg">					
+                </div>
+                <div class="cell-full noanimation">
+                    <img src="resources/images/Poly-Coaster/2.jpg"/>                    
+                </div>
+            </div>
+        </div>
+        </div>
+        <footer>
+            <p>Copyright &copy; 2017 Robert Gittus. All rights reserved</p>
+        </footer>
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.height = "100%";
+            }
+            
+            function closeNav() {
+                document.getElementById("myNav").style.height = "0%";
+            }
+        </script>
+	</body>
+</html>
