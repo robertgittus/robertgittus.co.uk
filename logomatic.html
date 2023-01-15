@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="css/Logmatic_style.css">    
-        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-        <meta content="utf-8" http-equiv="encoding">
-        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-        <script src="js/words.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-        <script>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/Logmatic_style.css">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script src="js/words.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script>
         function GetRandomInt(min, max) {
             min = Math.ceil(min);
             max = Math.floor(max);
@@ -19,42 +20,43 @@
             document.getElementById("words").innerText = words;
 
             var button = document.getElementById("element");
-                if (button.style.display != "none") {
-                    button.style.display = "none";
-                }             
-         }
-         
-         function Generatephase(){
+            if (button.style.display != "none") {
+                button.style.display = "none";
+            }
+        }
+
+        function Generatephase() {
             var phase = phases[GetRandomInt(0, phases.length)];
             document.getElementById("words").innerText = phase;
-         }
+        }
 
-          function afterbutton(){
+        function afterbutton() {
             var button = document.getElementById("element");
             if (button.style.display == "none") {
-                $('body').click(function() {
+                $('body').click(function () {
                     GenerateWords();
                 });
             }
-         }
+        }
 
-        </script>
-    </head>
+    </script>
+</head>
 
-    <body onclick="afterbutton()">
-        <div id="fadein">
-            <div id="heading">
-                <h1>Logo Idea Gen.omatic</h1>
-                <h2>When you are stuck for logo ideas</h2>
-            </div>
-            <div id="main">
-                <h3 id="phase"></h3>
-                <h2 id="words"></h2>
-                <div id="element" onclick="GenerateWords()" class="ghost-button" target="">Generate</div> 
-            </div>
-             <div id="footer">
-                <h2 style="text-align: right; padding-right: 35.5px; text-decoration: underline;">@RobertGittus</h2>
-            </div>
-        </div> 
-    </body>
+<body onclick="afterbutton()">
+    <div id="fadein">
+        <div id="heading">
+            <h1>Logo Idea Gen.omatic</h1>
+            <h2>When you are stuck for logo ideas</h2>
+        </div>
+        <div id="main">
+            <h3 id="phase"></h3>
+            <h2 id="words"></h2>
+            <div id="element" onclick="GenerateWords()" class="ghost-button" target="">Generate</div>
+        </div>
+        <div id="footer">
+            <h2 style="text-align: right; padding-right: 35.5px; text-decoration: underline;">@RobertGittus</h2>
+        </div>
+    </div>
+</body>
+
 </html>

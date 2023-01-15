@@ -1,77 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Robert Gittus - Icon Bundle</title>
-		<link rel="stylesheet" type="text/css" href="css/style-minified.css">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-        <link rel="shortcut icon" href="resources/images/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="resources/images/icon.png" type="image/x-icon">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
-    </head>
-	<body>
-        <header>
-            <div class="nav-container" onclick="openNav()">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Robert Gittus - Icon Bundle</title>
+    <link rel="stylesheet" type="text/css" href="css/style-minified.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="shortcut icon" href="resources/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="resources/images/icon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <div class="nav-container" onclick="openNav()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div id="myNav" class="overlay">
+            <div class="nav-container" onclick="closeNav()">
+                <div class="bar1 bar1-white"></div>
+                <div class="bar2 bar1-white"></div>
+                <div class="bar3 bar1-white"></div>
             </div>
-            <div id="myNav" class="overlay">
-                    <div class="nav-container" onclick="closeNav()">
-                        <div class="bar1 bar1-white"></div>
-                        <div class="bar2 bar1-white"></div>
-                        <div class="bar3 bar1-white"></div>
-                    </div>
-                    <div class="overlay-content">
-                        <div class="box">
-                            <a href="/#portfolio" onclick="closeNav()">Overview,</a> 
-                            <a href="https://medium.com/@robertgittus">Blog,</a>
-                        </div>
-                        <div class="box">
-                            <a href="/#about-contact" onclick="closeNav()">About,</a> 
-                            <a href="/#about-contact" onclick="closeNav()">Contact.</a>
-                        </div>
-                    </div>
-                </div>
-			<a href="/"><img id="Name" src="resources/images/Header.jpg"></img></a>
-        </header>
-        <div class="container">
-            <div class="text-container">
+            <div class="overlay-content">
                 <div class="box">
-                    <h1>OSX icon bundle and framework </h1>
+                    <a href="/#portfolio" onclick="closeNav()">Overview</a>
+                    <a href="https://medium.com/@robertgittus">Blog</a>
                 </div>
                 <div class="box">
-                    <h1>OSX, Icons, Digital, Open Source.</h1>
-                </div>
-            </div>
-            <article>
-                <p>
-                    Free open-source OS X bundle and framework gives Apple Mac OS X users the choice to personalise their desktop. The project became an international collaboration with numerous Reddit users designing uniformed icons which were free, open-source and editable. Within a few days the free icons bundle had more than 500 icons.
-                </p>
-            </article>
-            <div id="project">                    
-                <div class="cell-full noanimation">
-                    <img src="resources/images/Icons/1.jpg">					
-                </div>
-                <div class="cell-full noanimation">
-                    <img src="resources/images/Icons/3.jpg">					
-                </div>
-                <div class="cell-full noanimation">
-                    <img src="resources/images/Icons/2.jpg"/>                    
+                    <a href="/#about-contact" onclick="closeNav()">About</a>
+                    <a href="/#about-contact" onclick="closeNav()">Contact</a>
                 </div>
             </div>
         </div>
-        <footer>
-            <p>Copyright &copy; 2017 Robert Gittus. All rights reserved</p>
-        </footer>
-        <script>
-            function openNav() {
-                document.getElementById("myNav").style.height = "100%";
-            }
-            
-            function closeNav() {
-                document.getElementById("myNav").style.height = "0%";
-            }
-        </script>
-	</body>
+        <a href="/"><img id="Name" src="resources/images/Header.jpg"></img></a>
+    </header>
+    <div class="container">
+        <div class="text-container">
+            <div class="box">
+                <h1>OSX icon bundle and framework </h1>
+            </div>
+            <div class="box">
+                <h1>OSX, Icons, Digital, Open Source.</h1>
+            </div>
+        </div>
+        <article>
+            <p>
+                Free open-source OS X bundle and framework gives Apple Mac OS X users the choice to personalise their
+                desktop. The project became an international collaboration with numerous Reddit users designing
+                uniformed icons which were free, open-source and editable. Within a few days the free icons bundle had
+                more than 500 icons.
+            </p>
+        </article>
+        <div id="project">
+            <div class="cell-full noanimation">
+                <img src="resources/images/Icons/1.jpg">
+            </div>
+            <div class="cell-full noanimation">
+                <img src="resources/images/Icons/3.jpg">
+            </div>
+            <div class="cell-full noanimation">
+                <img src="resources/images/Icons/2.jpg" />
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright &copy; 2023 Robert Gittus. All rights reserved</p>
+    </footer>
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+        }
+    </script>
+</body>
+
 </html>

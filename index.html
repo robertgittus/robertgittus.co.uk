@@ -1,203 +1,211 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">			
-		<title>Robert Gittus</title>
-		<link rel="stylesheet" type="text/css" href="css/style-minified.css">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-		<link rel="shortcut icon" href="resources/images/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="resources/images/icon.png" type="image/x-icon">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	</head>
-	<body>
-		<header>
-			<div class="nav-container" onclick="openNav()">
-				<div class="bar1"></div>
-				<div class="bar2"></div>
-				<div class="bar3"></div>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Robert Gittus</title>
+	<link rel="stylesheet" type="text/css" href="css/style-minified.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="shortcut icon" href="resources/images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="resources/images/icon.png" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<header>
+		<div class="nav-container" onclick="openNav()">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+		</div>
+		<div id="myNav" class="overlay">
+			<div class="nav-container" onclick="closeNav()">
+				<div class="bar1 bar1-white"></div>
+				<div class="bar2 bar1-white"></div>
+				<div class="bar3 bar1-white"></div>
 			</div>
-			<div id="myNav" class="overlay">
-				<div class="nav-container" onclick="closeNav()">
-					<div class="bar1 bar1-white"></div>
-					<div class="bar2 bar1-white"></div>
-					<div class="bar3 bar1-white"></div>
-				</div>
-				<div class="overlay-content">
-					<div class="box">
-						<a href="#portfolio" onclick="closeNav()">Overview,</a> 
-						<a href="https://medium.com/@robertgittus">Blog,</a>
-					</div>
-					<div class="box">
-						<a href="#about-contact" onclick="closeNav()">About,</a> 
-						<a href="#about-contact" onclick="closeNav()">Contact.</a>
-					</div>
-				</div>
-			</div>
-			<a href="/"><img id="Name" src="resources/images/Header.jpg"></img></a>
-		</header>
-		<div class="container">
-			<div class="text-container">
+			<div class="overlay-content">
 				<div class="box">
-					<h1>Designer, Thinker,</h1>
+					<a href="#portfolio" onclick="closeNav()">Overview</a>
+					<a href="https://medium.com/@robertgittus">Blog</a>
 				</div>
 				<div class="box">
-					<h1>Creator, Maker.</h1>
+					<a href="#about-contact" onclick="closeNav()">About</a>
+					<a href="#about-contact" onclick="closeNav()">Contact</a>
 				</div>
 			</div>
-			<div id="portfolio">
-				<h2>PORTFOLIO</h2>
-				<div id="projects">
+		</div>
+		<a href="/"><img id="Name" src="resources/images/Header.jpg"></img></a>
+	</header>
+	<div class="container">
+		<div class="text-container">
+			<div class="box">
+				<h1>Designer, Thinker,</h1>
+			</div>
+			<div class="box">
+				<h1>Creator, Maker.</h1>
+			</div>
+		</div>
+		<div id="portfolio">
+			<h2>PORTFOLIO</h2>
+			<div id="projects">
+				<div class="cell-half">
+					<a href="gopro.html"><img src="resources/images/Gopro.jpg"></a>
+					<div class="project-overlay">
+						<div class="text">
+							<h4>GoPro Packaging</h4>
+							<h5>Packaging, Graphics, Brand, UX.</h5>
+						</div>
+					</div>
+				</div>
+				<div class="cell-half">
+					<a href="meriel.html"><img src="resources/images/Skiing.jpg"></a>
+					<div class="project-overlay">
+						<div class="text">
+							<h4>Meriel Skiing Resort</h4>
+							<h5>Brand Identity, Graphics, Advertisement.</h5>
+						</div>
+					</div>
+				</div>
+				<div class="cell-full">
+					<a href="cycling.html"><img src="resources/images/Cycling.jpg"></a>
+					<div class="project-overlay">
+						<div class="text">
+							<h4>Underbar gel</h4>
+							<h5>Product, Medical, Human Factors, Cycling, UX.</h5>
+						</div>
+					</div>
+				</div>
+				<div>
 					<div class="cell-half">
-						<a href="gopro"><img src="resources/images/Gopro.jpg"></a>
+						<a href="mokapot.html"><img src="resources/images/Moka.jpg"></a>
 						<div class="project-overlay">
 							<div class="text">
-								<h4>GoPro Packaging</h4>
-								<h5>Packaging, Graphics, Brand, UX.</h5>
+								<h4>Moka . pot</h4>
+								<h5>Product, Manufacturing, Coffee-concept.</h5>
 							</div>
 						</div>
 					</div>
 					<div class="cell-half">
-						<a href="meriel"><img src="resources/images/Skiing.jpg"></a>
+						<a href="recent.html"><img src="resources/images/Recently.png"></a>
 						<div class="project-overlay">
 							<div class="text">
-								<h4>Meriel Skiing Resort</h4>
-								<h5>Brand Identity, Graphics, Advertisement.</h5>
+								<h4>Recent and Ongoing work</h4>
+								<h5>One-off Designs and Projects.</h5>
 							</div>
 						</div>
 					</div>
 					<div class="cell-full">
-						<a href="cycling"><img src="resources/images/Cycling.jpg"></a>
+						<a href="icons.html"><img src="resources/images/Icons.jpg"></a>
 						<div class="project-overlay">
 							<div class="text">
-								<h4>Underbar gel</h4>
-								<h5>Product, Medical, Human Factors, Cycling, UX.</h5>
+								<h4>Icon Bundle and Framework</h4>
+								<h5>OSX, Icons, Digital, Open Source.</h5>
 							</div>
 						</div>
 					</div>
-					<div>
-						<div class="cell-half">
-							<a href="mokapot"><img src="resources/images/Moka.jpg"></a>							
-								<div class="project-overlay">
-									<div class="text">
-										<h4>Moka . pot</h4>
-										<h5>Product, Manufacturing, Coffee-concept.</h5>
-									</div>
+
+					<div class="cell-half">
+						<a href="logomatic.html"><img src="resources/images/Logomatic.png"></a>
+						<div class="project-overlay">
+							<div class="text">
+								<h4 style="padding-left:8px">Logo idea genomatic</h4>
+								<h5 style="padding-left:8px">Procedurally generated logo ideas.</h5>
 							</div>
 						</div>
-						<div class="cell-half">
-							<a href="recent"><img src="resources/images/Recently.png"></a>							
-							<div class="project-overlay">
-								<div class="text">
-									<h4>Recent and Ongoing work</h4>
-									<h5>One-off Designs and Projects.</h5>
-								</div>
-							</div>
-						</div>
-						<div class="cell-full">
-							<a href="icons"><img src="resources/images/Icons.jpg"></a>			
-							<div class="project-overlay">
-								<div class="text">
-									<h4>Icon Bundle and Framework</h4>
-									<h5>OSX, Icons, Digital, Open Source.</h5>
-								</div>
-							</div>
-						</div>
-
-						<div class="cell-half">
-								<a href="logomatic"><img src="resources/images/Logomatic.png"></a>											
-								<div class="project-overlay">
-									<div class="text">
-										<h4 style="padding-left:8px">Logo idea genomatic</h4>
-										<h5 style="padding-left:8px">Procedurally generated logo ideas.</h5>
-									</div>
-								</div>
-						</div>
-
-						<div class="cell-half">
-							<a href="paypal"><img src="resources/images/Paypal.jpg"></a>							
-							<div class="project-overlay">
-								<div class="text">
-									<h4>Paypal Internet Of Me</h4>
-									<h5>Contextual, Product, Brand Identity.</h5>
-									</div>
-							</div>
-						</div>
-					
-						<div class="cell-half">
-								<a href="coaster"><img src="resources/images/Mug.jpg"></a>											
-								<div class="project-overlay">
-									<div class="text">
-										<h4>Poly-Coaster</h4>
-										<h5>Product, Manufacturing, User Experience.</h5>
-									</div>
-								</div>
-							</div>
-
-							<div class="cell-half">
-								<a href="logofolio"><img src="resources/images/Logofolio.png"></a>											
-								<div class="project-overlay">
-									<div class="text">
-										<h4>Logofolio</h4>
-										<h5>Logo projects on-going and finished.</h5>
-									</div>
-								</div>
-							</div>
-
-							<div class="cell-half">
-								<a href="physical"><img src="resources/images/Physical.jpg"></a>											
-								<div class="project-overlay">
-									<div class="text">
-										<h4 style="padding-left:8px">Physical Portfolio</h4>
-										<h5 style="padding-left:8px">Book of work.</h5>
-									</div>
-								</div>
-							</div>
-
-							<div class="cell-half">
-								<a href="article"><img src="resources/images/Article.png"></a>											
-								<div class="project-overlay">
-									<div class="text">
-										<h4 style="padding-left:8px">Contextual Article</h4>
-										<h5 style="padding-left:8px">Design proces, Amazon dash, Hacking.</h5>
-									</div>
-								</div>
-							</div>
-
-							
-
 					</div>
-				</div>
-				
-				<div id="about-contact">
-					<div id="about" class="cell-half">
-						<h1>ABOUT</h1>
-						<p>My passion lies in creating meaningful products and interactive experiences which connect products to the physical world. Through combining my creativity and technical knowledge I aim to produce functional and meaningful solutions. I am a designer with core skills in Industrial and Graphic Design, Prototyping, Contextual Design and User Experience.</p>
-						<p style="padding-top:12px;"><a style="font-weight:bold; color:black" href="/resources/other/Robert_Gittus_CV.pdf">Download CV</a></li>
+
+					<div class="cell-half">
+						<a href="paypal.html"><img src="resources/images/Paypal.jpg"></a>
+						<div class="project-overlay">
+							<div class="text">
+								<h4>Paypal Internet Of Me</h4>
+								<h5>Contextual, Product, Brand Identity.</h5>
+							</div>
+						</div>
 					</div>
-					<div id="contact" class="cell-half">
-						<h1>LETS</h1>
-						<h1>TALK</h1>
-						<ul id="social">
-							<li><a href="https://www.linkedin.com/in/robertgittus/">LinkedIn</a></li>
-							<li><a href="https://medium.com/@robertgittus">Medium</a></li>
-						</ul>
-						<p><a href="mailto:robgittus@gmail.com">RobGittus@gmail.com</a></p>
-						<p>Mobile: 07402675725</p>
+
+					<div class="cell-half">
+						<a href="coaster.html"><img src="resources/images/Mug.jpg"></a>
+						<div class="project-overlay">
+							<div class="text">
+								<h4>Poly-Coaster</h4>
+								<h5>Product, Manufacturing, User Experience.</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="cell-half">
+						<a href="logofolio.html"><img src="resources/images/Logofolio.png"></a>
+						<div class="project-overlay">
+							<div class="text">
+								<h4>Logofolio</h4>
+								<h5>Logo projects on-going and finished.</h5>
+							</div>
+						</div>
+					</div>
+
+					<div class="cell-half">
+						<a href="resources/other/Robert_Gittus_Portfolio.pdf" download="Robert Gittus CV"><img
+								src="resources/images/Physical.jpg"></a>
+						<div class="project-overlay">
+							<div class="text">
+								<h4 style="padding-left: 8px;padding-top: 12px;">Download Portfolio</h4>
+							</div>
+						</div>
+					</div>
+
+					<div class="cell-half">
+						<a href="article.html"><img src="resources/images/Article.png"></a>
+						<div class="project-overlay">
+							<div class="text">
+								<h4 style="padding-left:8px">Contextual Article</h4>
+								<h5 style="padding-left:8px">Design proces, Amazon dash, Hacking.</h5>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
+
+			<div id="about-contact">
+				<div id="about" class="cell-half">
+					<h1>ABOUT</h1>
+					<p>My passion lies in creating meaningful products and interactive experiences which connect
+						products to the physical world. Through combining my creativity and technical knowledge I aim to
+						produce functional and meaningful solutions. I am a designer with core skills in Industrial and
+						Graphic Design, Prototyping, Contextual Design and User Experience.</p>
+					<div style="padding-top:12px;">
+						<p><a style="font-weight:bold; color:black" href="resources/other/Robert_Gittus_CV.pdf"
+								download="Robert Gittus CV">Download CV</a></p>
+						<p><a style="font-weight:bold; color:black" href="resources/other/Robert_Gittus_Portfolio.pdf"
+								download="Robert Gittus Portfolio">Download Portfolio</a></p>
+					</div>
+				</div>
+				<div id="contact" class="cell-half">
+					<h1>LETS</h1>
+					<h1>TALK</h1>
+					<ul id="social">
+						<li><a href="https://www.linkedin.com/in/robertgittus/">LinkedIn</a></li>
+						<li><a href="https://medium.com/@robertgittus">Medium</a></li>
+					</ul>
+					<p><a href="mailto:robgittus@gmail.com">RobGittus@gmail.com</a></p>
+					<p>Mobile: 07402675725</p>
+				</div>
+			</div>
 		</div>
-		<footer>
-            <p>Copyright &copy; 2017 Robert Gittus. All rights reserved</p>
-		</footer>
-		<script>
-			 function openNav() {
-                document.getElementById("myNav").style.height = "100%";
-            }
-            
-            function closeNav() {
-                document.getElementById("myNav").style.height = "0%";
-            }
-		</script>
-	</body>
+	</div>
+	<footer>
+		<p>Copyright &copy; 2023 Robert Gittus. All rights reserved</p>
+	</footer>
+	<script>
+		function openNav() {
+			document.getElementById("myNav").style.height = "100%";
+		}
+
+		function closeNav() {
+			document.getElementById("myNav").style.height = "0%";
+		}
+	</script>
+</body>
+
 </html>
