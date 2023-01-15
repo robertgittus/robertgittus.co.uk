@@ -15,15 +15,16 @@
 
         <script>
         var $carouselIndicators = $(".carousel-indicators > li");
-      $('#mycarousel').on('slide', function() {
-        setTimeout(function(){
-          var currentSlideNo = $(".active").data("slide-no"),
-              newItem = $(".carousel-indicators > li[data-indicator-no='" + currentSlideNo + "']");
-          console.log(currentSlideNo);
-          $carouselIndicators.removeClass("active");
-          newItem.addClass("active");
-        }, 750)
-      });
+
+        $('#mycarousel').on('slide', function() {
+          setTimeout(function(){
+            var currentSlideNo = $(".active").data("slide-no"),
+                newItem = $(".carousel-indicators > li[data-indicator-no='" + currentSlideNo + "']");
+            console.log(currentSlideNo);
+            $carouselIndicators.removeClass("active");
+            newItem.addClass("active");
+          }, 750)
+        });
        </script>
 
     </head>
@@ -125,7 +126,7 @@
                 </a>
                   </div>
                 </div>
-                <p><a style="font-size:12px; top:12px; font-weight:bold; color:black" href="https://drive.google.com/open?id=1MFz1pob0VwXi3nJZOTG6SvAooI7jPqBK"> Download Physical Portfolio</a></p>
+                <p><a style="font-size:12px; top:12px; font-weight:bold; color:black" href="/resources/other/Robert_Gittus_Portfolio.pdf"> Download Physical Portfolio</a></p>
             </div>
              </div>
         
